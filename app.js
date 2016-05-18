@@ -3,7 +3,11 @@ var Saludo = React.createClass({
         return(
             <div>
                 <h1>¡Hola Mundo!</h1>
-                <p>¡Buen día!</p>
+                <h3>Planeta tierra</h3>
+                <p>¡Buen día! {this.props.nombre}
+                    <br/>
+                    <i>{this.props.children}</i>
+                </p>
             </div>
 
         )
@@ -11,7 +15,11 @@ var Saludo = React.createClass({
 });
 
 ReactDOM.render(
-    <Saludo/>
+    <div>
+        <Saludo nombre="David Rubio"> Español </Saludo>
+        <Saludo nombre="Raul Rubio"> Mexicano </Saludo>
+        <Saludo nombre="Lara Rubio"> Peruano </Saludo>
+    </div>
     ,
     document.getElementById('mensaje')
 );
