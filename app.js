@@ -1,7 +1,14 @@
 var Comida = React.createClass({
+    getInitialState: function () {
+      // return {like:false}
+      return{
+          like: Boolean(this.props.like)
+      }
+    },
     handleLike: function () {
-        var nombreComida = this.props.nombre;
-        alert("Comida de mi gusto "+ nombreComida);
+        this.setState({
+            like: !this.state.like
+        })
     },
     render: function () {
         return(
@@ -11,7 +18,9 @@ var Comida = React.createClass({
                     Comida <i>{this.props.children}</i>
                 </p>
                 <p>
-                    <span onClick={this.handleLike} className="glyphicon glyphicon-heart glyphicon-heart-lg red"></span>
+                    <input onChange={this.handleLike} defaultChecked={this.state.like} type="checkbox" className="glyphicon glyphicon-heart glyphicon-heart-lg"></input>
+                    <br/>
+                    Me Gusta: <b>{String(this.state.like)}</b>
                 </p>
             </div>
         )
@@ -20,9 +29,15 @@ var Comida = React.createClass({
 
 ReactDOM.render(
     <div className="centerBlock">
-        <Comida nombre="Tacos">Mexicana</Comida>
-        <Comida nombre="Paella">Española</Comida>
-        <Comida nombre="Ceviche">Peruana</Comida>
+        <Comida nombre="Tacos">
+            Mexicana
+        </Comida>
+        <Comida nombre="Paella" like>
+            Española
+        </Comida>
+        <Comida nombre="Ceviche">
+            Peruana
+        </Comida>
     </div>
     ,
     document.getElementById('container')
