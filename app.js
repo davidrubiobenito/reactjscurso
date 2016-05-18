@@ -1,16 +1,17 @@
 var Saludo = React.createClass({
     render: function () {
-        return(<h1>¡Hola Mundo!</h1>)
+        return(
+            <div>
+                <h1>¡Hola Mundo!</h1>
+                <p>¡Buen día!</p>
+            </div>
+
+        )
     }
 });
 
-
 ReactDOM.render(
-    <div>
-        <Saludo/>
-        <Saludo/>
-        <Saludo/>
-    </div>
+    <Saludo/>
     ,
     document.getElementById('mensaje')
 );
