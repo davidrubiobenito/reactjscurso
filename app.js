@@ -1,25 +1,29 @@
-var Saludo = React.createClass({
+var Comida = React.createClass({
+    handleLike: function () {
+        var nombreComida = this.props.nombre;
+        alert("Comida de mi gusto "+ nombreComida);
+    },
     render: function () {
         return(
             <div>
-                <h1>¡Hola Mundo!</h1>
-                <h3>Planeta tierra</h3>
-                <p>¡Buen día! {this.props.nombre}
-                    <br/>
-                    <i>{this.props.children}</i>
+                <h1 className="bg-success">{this.props.nombre}</h1>
+                <p className="bg-info">
+                    Comida <i>{this.props.children}</i>
+                </p>
+                <p>
+                    <span onClick={this.handleLike} className="glyphicon glyphicon-heart glyphicon-heart-lg red"></span>
                 </p>
             </div>
-
         )
     }
 });
 
 ReactDOM.render(
-    <div>
-        <Saludo nombre="David Rubio"> Español </Saludo>
-        <Saludo nombre="Raul Rubio"> Mexicano </Saludo>
-        <Saludo nombre="Lara Rubio"> Peruano </Saludo>
+    <div className="centerBlock">
+        <Comida nombre="Tacos">Mexicana</Comida>
+        <Comida nombre="Paella">Española</Comida>
+        <Comida nombre="Ceviche">Peruana</Comida>
     </div>
     ,
-    document.getElementById('mensaje')
+    document.getElementById('container')
 );
