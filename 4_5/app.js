@@ -80,7 +80,7 @@ var ListaComida = React.createClass({
                 <div className="input-group">
                     <input ref="nuevaComida" onKeyPress={this.handleKeyDown}  type="text" className="form-control" placeholder="Agregar nueva comuda..."/>
                     <span className="input-group-btn">
-                        <div className="btn btn-default btn-success" onClick={this.add.bind(null, "Nueva Comida")}> + </div>
+                        <div className="btn btn-default btn-success" onClick={this.add.bind(null, "Nueva comida")}> + </div>
                     </span>
                 </div>
                 <div>
