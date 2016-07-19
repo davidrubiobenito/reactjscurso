@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="5/|**/node_modules/*|2_2/|3_5/|build/|3_3/|3_7/|4_4/|4_8/|4_2/|4_6/|**/bower_components/*|**/*.min.js|3_2/|3_6/|3_4/|4_1/|4_5/|4_3/|4_7/" kind="src" path=""/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="2_2"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="3_2"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="3_3"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="3_4"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="3_5"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="3_6"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="3_7"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="4_1"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="4_2"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="4_3"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="4_4"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="4_5"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="4_6"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="4_7"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="4_8"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="5"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="build"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path=""/>
+</classpath>
